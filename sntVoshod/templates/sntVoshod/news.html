@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+	<head>
+
+        {% load static %}
+
+		<!-- Подключение meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <!-- НАзвание вкладки -->
+        <title>Новости СНТ"Восход-1"</title>
+        <!-- Картинка сайта -->
+        <link rel="shortcut icon" type="images/x-icon" href="{% static 'sntVoshod/header/snt-title1.jpg' %}">
+        <!-- Подключение css -->
+         <link rel="stylesheet" type="text/css" href="{% static 'sntVoshod/css/old_main.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'sntVoshod/css/news.css' %}">
+        <!-- Подключение google-шрифтов -->
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	</head>
+	<body  style="background: #dfd532;">
+        
+    		
+                <ul class="nav justify-content-center" style="font-size: 20px; background: orange;">
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'sntVoshod:index' %}">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'forum:index' %}">Форум</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'sntVoshod:profile' %}">Личный кабинет</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech__support">Помощь</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'sntVoshod:profile' %}">{{user.username}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'sntVoshod:logout' %}">Выйти</a>
+                    </li>
+
+                 </ul>
+        <div class="container">
+            <div class="news-div1" style="background: orange; padding-bottom: 20px; margin-bottom: 0px;">
+            	<h1 class="news-h1">Новости</h1>
+            </div>
+            <section style="background: orange; margin-top: 0px;">
+                    {% if post_list%}
+                    <div class="d-flex flex-column">
+                    {% for post in post_list%}
+                        <div class="p-2">
+                            <a href="{% url 'sntVoshod:check_post' post.id%}">
+                            <h2 style="margin-top: 0px; padding-top: 20px;">
+                                {{post.name}}
+                            </h2>
+                            </a>
+                            <p>
+                                {{post.post_text|truncatechars:99}}
+                            </p>
+                            <p>
+                                Дата публикации: {{post.pub_date}}
+                            </p>
+                        </div>
+                    {%endfor%}
+                    </div>
+                {% endif %}
+
+            <div class="pagination" style="font-size:20px; text-align: center;">
+                <span class="step-links">
+                    {% if page_obj.has_previous %}
+                        <a href="?page=1">&laquo;  Первая</a>
+                        <a href="?page={{ page_obj.previous_page_number }}">Предыдущая</a>
+                    {% endif %}
+
+                    <span class="current">
+                        Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}.
+                    </span>
+
+                    {% if page_obj.has_next %}
+                        <a href="?page={{ page_obj.next_page_number }}">Следующая</a>
+                        <a href="?page={{ page_obj.paginator.num_pages }}">Последняя &raquo;</a>
+                    {% endif %}
+                </span>
+            </div>
+        </div>
+
+                
+            </section>
+
+        </div>
+	</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+        
+        {% load static %}
+
+        <title>СНТ "ВОСХОД-1"</title>
+        
+        <!-- icon site -->
+        <link rel="shortcut icon" type="images/x-icon" href="{% static 'sntVoshod/header/snt-title1.jpg' %}">
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        
+        <!-- Normalize css -->
+<!--         <link rel="stylesheet" href="{% static 'sntVoshod/cssnormalaize/normalize.css' %}"> -->
+        
+        <!-- Normal css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'sntVoshod/css/main.css' %}">
+        
+        <!-- google foonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        
+
+</head>
+    
+<body>
+
+
+
+        <header >
+
+
+            {% if not request.user.is_authenticated %}
+                <ul class="nav justify-content-center" style="font-size: 20px; background: orange;">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'sntVoshod:registration' %}">Регистрация</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'sntVoshod:login' %}">Авторизация</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech__support">Помощь</a>
+                    </li>
+                </ul>
+            {% else %}
+                <ul class="nav justify-content-center" style="font-size: 20px; background: orange;">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{% url 'sntVoshod:profile' %}">{{user.username}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'sntVoshod:news' %}">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'forum:index' %}">Форум</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'sntVoshod:profile' %}">Личный кабинет</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech__support">Помощь</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'sntVoshod:logout' %}">Выйти</a>
+                    </li>
+                </ul>
+            {% endif %}
+
+
+            <div class="container" style="background: orange;">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="{% static 'sntVoshod/header/snt-head2.png' %}"  alt="Это официальный сайт" class="img-adaptive">
+                    </div>
+                    
+                    <div class="text__geo col-6">
+                         <p>Кировский район</p>
+                         <p>Ленинградской области</p>
+                         <p>Массив "ВОСХОД" Невского района</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+
+
+        <section class="container snt-info">
+            <div class="row">
+                <div class="col-lg-6 no-gutters pr-0 pl-0 snt-info__information">
+                    <h2 class="inf-section__h2">На сайте СНТ"Восход-1" вы можете:</h2>
+                    <ul class="list2">
+                        <li>
+                            Ознакомиться с актуальной информацией, касающейся Товарищества, а также новостями из сферы садоводства и огородничества; 
+                        </li><br>
+                        
+                        <li>
+                            Увидеть всю необходимую документацию; 
+                        </li><br>
+                        
+                        <li>
+                            Задать вопрос и получить оперативный ответ; 
+                        </li><br>
+                        
+                        <li>
+                            Посмотреть список участков, входящих в состав Товарищества. 
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-6 d-none d-lg-block no-gutters pr-0 pl-0">
+                    <img src="{% static 'sntVoshod/inf-section/s1200.jpg' %}" alt="К сожалению картинка не загрузилась" class="site-info__img">
+                </div>
+            </div>
+        </section>
+        
+            <section class="container news-section">
+                {% if post %}
+                
+                <div class="row">
+                        </div>
+                        <div class="d-flex justify-content-between news__item " style="margin-top: 30px; background: #dfd532;">
+                            <div class="p-2"></div>
+                            <div class="p-3 news__item shadow-lg p-3 mb-5 bg-orange rounded" id ='123' style="margin-top: 50px; text-align:  center;">
+                                <h3> Последние Новости</h3>
+                                <p>✉{{post.pub_date}}</p>
+                                <h3 class="sada">{{post.name}}</h3>
+                                <p class="par-news__item">
+                                <strong>ВНИМАНИЕ!</strong> 
+                                {{post.post_text|truncatechars:125}}
+                            </p>
+                            <a href="{% url 'sntVoshod:check_post' post.id%}">Открыть эту новость</a>
+                            </div>
+                            <div class="p-2" style="width: 1px;"></div>
+
+                        </div>
+                </div>
+                <a class="news__section-ankor" href="{% url 'sntVoshod:news' %}">все новости</a>
+                {% endif %}
+                
+            </section>      
+        <section class="contact-section shadow-lg bg-orange rounded">
+            <div class="container">
+                <div class="row">
+                    <div class=" contacts-section col-lg-7">
+                        <h3>Контакты</h3>
+
+                        <table class="table__contact-section">
+                                <td><strong>Адрес:</strong></td> <td>187322, Ленинградская область, Кировский район, массив Восход, СНТ "Восход-1"</td>
+                        </table>
+
+                       <h4 class="snt__contact-selection">Правление Товарищества</h4>
+
+                    <table>
+                               <tr>
+                                <td><strong>Место<br>приема:</strong></td> <td>Здание Правления, староладожский канал</td>
+                               </tr><br>
+                               <tr>
+                                   <td><strong>Часы<br>приёма:</strong></td> <td>с мая по октябрь - суббота с 12:00 до 15:00;<br>с ноября по апрель - по предварительной договоренности</td><br>
+                               </tr>
+                        </table>
+                    </div>
+
+                    <div class="tech__support col-lg-5">
+
+                        <h3 class="technical-support__title-block" id="tech__support">Обратная связь</h3>
+                            <form action="{% url 'sntVoshod:user_mail' %}" method="post" class="form__technical-support" >
+                                {% csrf_token %}
+                                <input type="text" name="technical-support__sent-login" maxlength="40" placeholder="Введите ваше имя" required="" class="form-control technical-support__sent-login"><br><br>
+                                <input type="email" name="technical-support__sent-email" maxlength="40" placeholder="Введите ваш E-mail" required="" class="form-control technical-support__sent-email"><br><br>
+                                <textarea placeholder="Текст сообщения" name="technical-support__message" class="form-control technical-support__message" required="" rows="6" cols="38"></textarea><br><br>
+                                <span class="subm__root"><input type="checkbox" name="check__technical-support" required="">Я согласен(на) и даю право СНТ <br>"Восход-1" хранить и обрабатывать<br>
+                                направленные мною в электронном<br>
+                                виде персональные данные<br>
+                                с соблюдением требований<br>
+                                российского законодательства о<br>
+                                персональных данных.</span><br><br>
+                                <input type="submit" class="subm__button1" value="Отправить">
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            СНТ "Восход-1"
+        </footer>
+</body>
+</html>

@@ -1,0 +1,844 @@
+*{
+    box-sizing: border-box;
+    color: black;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+div.p-3{
+    height: 400px;
+    width: 400px;
+    text-align: left;
+}
+
+#123{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #dfd532;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1230px;
+}
+
+.img-adaptive{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+/******************************
+**********Header************
+******************************/
+header div.logreg__div{
+    background-color: #FF8C00;
+    text-align: center;
+    font-weight: bold;
+}
+
+header div.logreg__div a {
+    word-spacing: 10px;
+    color: black
+}
+
+header div.logreg__div a:hover{
+    text-decoration: none;
+}
+
+header div.header--geo{
+    background-color: orange;
+    border-radius: 0px 0px 10px 10px 
+}
+
+header div.text__geo{
+    color: black;
+    font-family: 'Lobster', cursive;
+    text-align: right;
+    font-size: 30px;
+    line-height: 90px;
+}
+
+
+/******************************
+**********nav-menu*********
+******************************/
+section div.nav-menu{
+    padding: 5px;
+    background-color: orange;
+    margin-top: 20px;
+    text-align: center;
+    border-radius:  5px;
+}
+
+section div.nav-menu a {
+    display: block;
+    font-weight: bold;
+    color:  black;
+}
+
+section div.nav-menu a:hover{
+    background: rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+
+/******************************
+**********inf-section*********
+******************************/
+section div img.site-info__img{
+    width: 615px; 
+    height: 396px;
+}
+
+section.snt-info{
+    color: black;
+    margin-top: 30px;
+    height: 396px;
+    background-color: orange;
+}
+
+section.snt-info div h2{
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 30px;
+}
+
+section.snt-info div ul{
+    font-size: 18px;
+    padding-top:  40px;
+}
+
+
+/******************************
+*******news-section*********
+******************************/
+section.news-section h3{
+    text-align: center;
+    margin-top: 30px;
+}
+
+section.news-section div.news__item{
+    background-color: orange;
+    border-radius: 5px;
+    background: orange;
+
+}
+
+.news__section-ankor{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/******************************
+*******Авторизация********
+******************************/
+
+div.login__in-site{
+    height: 370px;
+    background-color: orange;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+div.login__in-site h3{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+div.login__in-site h3.login-h3{
+    margin-bottom:  30px;
+}
+
+div.login__in-site input[type="text"], input[type="password"]{
+    display: block;
+    margin-bottom: 30px;
+    height: 50px;
+    width: 600px;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+div.login__in-site input[type="text"], input[type="password"]:focus{
+    outline: none;
+}
+
+.submitremember{
+    margin-bottom: 20px;
+    font-size: 20px
+}
+
+button.subm__button{
+    width: 250px;
+    height: 40px;
+    background-color: #FF7F50;
+    border: none;
+    border-radius: 10px;
+}
+
+div.login__in-site ul{
+    margin-left: 50px;
+}
+
+/*******************************
+*Контактная информация*
+*******************************/
+
+section.contact-section{
+    background: orange;
+    margin-top: 80px;
+}
+
+section.contact-section div.contacts-section{
+    margin-top: 40px;
+}
+
+section.contact-section div.contacts-section h3{
+    margin-bottom: 20px;
+}
+
+.table__contact-section{
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+section.contact-section div.contacts-section h4{
+    margin-bottom: 20px;
+}
+
+div.tech__support{
+    margin-top: 40px;
+}
+
+section.contact-section div.tech__support input[type="text"],section.contact-section div.tech__support input[type="email"]{
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+section.contact-section div.tech__support input[type="text"],section.contact-section div.tech__support input[type="email"]:focus{
+    outline: none;
+}
+
+section.contact-section div.tech__support textarea{
+    resize: none;
+    width: 500px;
+    height: 150px;
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+section.contact-section div.tech__support textarea:focus{
+    outline: none;
+}
+
+.subm__button1{
+    width: 250px;
+    height: 40px;
+    background-color: #FF7F50;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+footer{
+    font-size: 16px;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    background: #FF7F50;
+    color: black;
+    width: 100%;
+}
+
+/********************************
+*********Адаптив*****************
+********************************/
+@media (min-width:  50px) and (max-width: 296.98px){ 
+    header div.logreg__div{
+        font-size: 10px;
+    }
+    header div.text__geo{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    section div.nav-menu{
+        font-size: 12px;
+    }
+    section div.nav-menu__section-anckor{
+       padding-top: 10px;
+    }
+    section.snt-info{
+        height: 580px;
+    }
+    section.snt-info div h2{
+        font-size: 16px;
+    }
+    section.snt-info div ul{
+        margin-top: -30px;
+        font-size: 15px;
+    }
+    section.news-section h3{
+        font-size: 19px;
+    }
+    section.news-section div{
+        font-size: 10px;
+    }
+    
+    section.news-section div.news__item2 {
+        margin-right: 0px;
+    }
+    section.news-section div.news__item {
+    }
+    section.news-section div.news__item2 {
+        margin-right: 0;
+        height: 156px;
+    }
+    section.news-section div.news__item3{
+        height: 156px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    section.login-section{
+        background: orange;
+        height: 600px;
+        margin-bottom: -30px;
+    }
+    div.login__in-site h3.login-h3{
+        font-size: 16px;
+    }
+    div.login__in-site input[type="text"], input[type="password"] {
+        width: 200px;
+        height: 30px;
+        font-size: 13px;
+        margin: 0 auto
+    }
+    div.login__in-site input[type="text"]{
+        margin-bottom: 10px;
+    }
+    .login-secton__checkbox{
+        margin-top: 15px;
+        font-size: 15px;
+        display: block;
+        text-align: center;
+    }
+    button.subm__button{
+        width: 150px;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+    }
+    div.login__in-site h3{
+        font-size: 13px;
+        margin-top: 30px; 
+    }
+    div.login__in-site ul li{
+        margin-left: -20px;
+        font-size: 12px;
+    }
+    section.contact-section h3, h4{
+        font-size: 13px;
+    }
+    section.contact-section table{
+        font-size: 13px;
+    }
+    section.contact-section div.tech__support input[type="text"], section.contact-section div.tech__support input[type="email"]{
+        margin-bottom: 10px;
+        display: block;
+        width: 200px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    section.contact-section div.tech__support textarea{
+        display: block;
+        width: 200px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .subm__root{
+        font-size: 15px;   
+    }
+    button.subm__button1{
+        width: 150px;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 297px) and (max-width: 490.98px) { 
+    header div.logreg__div{
+        font-size: 10px;
+    }
+    header div.text__geo{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    section div.nav-menu{
+        font-size: 12px;
+    }
+    section div.nav-menu__section-anckor{
+       padding-top: 10px;
+    }
+    section.snt-info{
+        height: 380px;
+    }
+    section.snt-info div h2{
+        font-size: 16px;
+    }
+    section.snt-info div ul{
+        margin-top: -30px;
+        font-size: 15px;
+    }
+    section.news-section h3{
+        font-size: 19px;
+    }
+    section.news-section div{
+        font-size: 10px;
+    }
+    
+    section.news-section div.news__item2 {
+        margin-right: 0px;
+    }
+    section.news-section div.news__item {
+    }
+    section.news-section div.news__item2 {
+        margin-right: 0;
+        height: 156px;
+    }
+    section.news-section div.news__item3{
+        height: 156px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    section.login-section{
+        background: orange;
+        height: 600px;
+        margin-bottom: -30px;
+    }
+    div.login__in-site h3.login-h3{
+        font-size: 16px;
+    }
+    div.login__in-site input[type="text"], input[type="password"] {
+        width: 200px;
+        height: 30px;
+        font-size: 13px;
+        margin: 0 auto
+    }
+    div.login__in-site input[type="text"]{
+        margin-bottom: 10px;
+    }
+    .login-secton__checkbox{
+        margin-top: 15px;
+        font-size: 15px;
+        display: block;
+        text-align: center;
+    }
+    button.subm__button{
+        width: 150px;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+    }
+    div.login__in-site h3{
+        font-size: 13px;
+        margin-top: 30px; 
+    }
+    div.login__in-site ul li{
+        margin-left: -20px;
+        font-size: 12px;
+    }
+    section.contact-section h3, h4{
+        font-size: 13px;
+    }
+    section.contact-section table{
+        font-size: 13px;
+    }
+    section.contact-section div.tech__support input[type="text"], section.contact-section div.tech__support input[type="email"]{
+        margin-bottom: 10px;
+        display: block;
+        width: 200px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    section.contact-section div.tech__support textarea{
+        display: block;
+        width: 200px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .subm__root{
+        font-size: 15px;   
+    }
+    button.subm__button1{
+        width: 150px;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 491px) and (max-width: 576px) { 
+    header div.logreg__div{
+        font-size: 10px;
+    }
+    header div.text__geo{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    section div.nav-menu{
+        font-size: 12px;
+    }
+    section div.nav-menu__section-anckor{
+    }
+    section.snt-info{
+        height: 380px;
+    }
+    section.snt-info div h2{
+        font-size: 16px;
+    }
+    section.snt-info div ul{
+        margin-top: -30px;
+        font-size: 15px;
+    }
+    section.news-section h3{
+        font-size: 19px;
+    }
+    section.news-section div{
+        font-size: 10px;
+    }
+    
+    section.news-section div.news__item2 {
+        margin-right: 0px;
+    }
+    section.news-section div.news__item {
+    }
+    section.news-section div.news__item2 {
+        margin-right: 0;
+        height: 156px;
+    }
+    section.news-section div.news__item3{
+        height: 156px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    section.login-section{
+        background: orange;
+        height: 600px;
+        margin-bottom: -30px;
+    }
+    div.login__in-site h3.login-h3{
+        font-size: 16px;
+    }
+    div.login__in-site input[type="text"], input[type="password"] {
+        width: 200px;
+        height: 30px;
+        font-size: 13px;
+        margin: 0 auto
+    }
+    div.login__in-site input[type="text"]{
+        margin-bottom: 10px;
+    }
+    .login-secton__checkbox{
+        margin-top: 15px;
+        font-size: 15px;
+        display: block;
+        text-align: center;
+    }
+    button.subm__button{
+        width: 150px;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+    }
+    div.login__in-site h3{
+        font-size: 13px;
+        margin-top: 30px; 
+    }
+    div.login__in-site ul li{
+        margin-left: -20px;
+        font-size: 12px;
+    }
+    section.contact-section h3, h4{
+        font-size: 13px;
+    }
+    section.contact-section table{
+        font-size: 13px;
+    }
+    section.contact-section div.tech__support input[type="text"], section.contact-section div.tech__support input[type="email"]{
+        margin-bottom: 10px;
+        display: block;
+        width: 200px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    section.contact-section div.tech__support textarea{
+        display: block;
+        width: 200px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .subm__root{
+        font-size: 15px;   
+    }
+    button.subm__button1{
+        width: 150px;
+        height: 30px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    footer{
+        font-size: 12px;
+    }
+ }
+
+@media (min-width: 576px) and (max-width: 597px){  
+    header div.text__geo{
+        font-size: 25px;
+        line-height: 40px;
+    }
+     section.news-section div.news__item {  
+    }
+    section.news-section div.news__item2 {
+    }
+    section.news-section div.news__item {
+    }
+    section.news-section div.news__item2 {
+    }
+    section.news-section div.news__item3{
+    }
+    div.login__in-site{
+        height: 660px;
+    }
+    div.tech__support{
+        text-align: center;
+    }
+    .nav-menu__section-anckor{
+        line-height: 50px;
+    }
+    div.login__in-site h3{
+        font-size: 25px;
+    }
+    div.login__in-site input[type="text"], input[type="password"]{
+        font-size: 18px;
+        margin: 0 auto;
+        width: 450px;
+    }
+    div.login__in-site input[type="text"]{
+        margin-bottom: 20px;
+    }
+    .login-secton__checkbox{
+        display: block;
+        text-align: center;
+    }
+    button.subm__button{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 597px) and (max-width: 625.98px) {  
+    header div.text__geo{
+        font-size: 25px;
+        line-height: 40px;
+    }
+     section.news-section div.news__item {
+    }
+    section.news-section div.news__item2 {
+
+    }
+    section.news-section div.news__item {
+
+    }
+
+    section.news-section div.news__item3{
+
+    }
+    div.login__in-site{
+        height: 660px;
+    }
+    div.tech__support{
+        text-align: center;
+    }
+    .nav-menu__section-anckor{
+        line-height: 50px;
+    }
+    div.login__in-site h3{
+        font-size: 25px;
+    }
+    div.login__in-site input[type="text"], input[type="password"]{
+        font-size: 18px;
+        margin: 0 auto;
+        width: 450px;
+    }
+    div.login__in-site input[type="text"]{
+        margin-bottom: 20px;
+    }
+    .login-secton__checkbox{
+        display: block;
+        text-align: center;
+    }
+    button.subm__button{
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 626px) and (max-width: 767.98px) { 
+    header div.text__geo{
+        font-size: 25px;
+        line-height: 40px;
+    }       
+     section.news-section div.news__item { 
+    }
+    section.news-section div.news__item2 {
+
+    }
+    section.news-section div.news__item {
+    }
+    section.news-section div.news__item2 {
+
+    }
+    section.news-section div.news__item3{
+
+    }
+    div.login__in-site{
+        height: 660px;
+    }
+    div.tech__support{
+        text-align: center;
+    }
+    .nav-menu__section-anckor{
+        line-height: auto;
+    }
+    div.login__in-site h3{
+        font-size: 25px;
+    }
+    div.login__in-site input[type="text"], input[type="password"]{
+        font-size: 18px;
+        margin: 0 auto;
+        width: 450px;
+    }
+    div.login__in-site input[type="text"]{
+        margin-bottom: 20px;
+    }
+    .login-secton__checkbox{
+        display: block;
+        text-align: center;
+    }
+    button.subm__button{
+        display: block;
+        margin: 0 auto;
+    }
+}
+ 
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    header div.text__geo{
+        font-size: 25px;
+        line-height: 60px;
+    }
+     section.news-section div.news__item {
+     
+    }
+    section.news-section div.news__item2 {
+    }
+    section.news-section div.news__item {
+    }
+    section.news-section div.news__item2 {
+
+    }
+    section.news-section div.news__item3{
+
+    }
+    div.login__in-site{
+        height: 660px;
+    }
+    div.tech__support{
+        text-align: center;
+    }
+    
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    section.snt-info div ul{
+        padding-top: 20px;
+    }
+    section.snt-info div h2{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    div.login__in-site h3{
+        margin-bottom: 10px;
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    div.login__in-site input[type="text"], input[type="password"]{
+        width: 450px;
+    }
+    section.contact-section div.tech__support input[type="text"], section.contact-section div.tech__support input[type="email"]{
+        width: 390px;
+    }
+    section.contact-section div.tech__support textarea{
+        width: 390px;
+    }
+ }
+
+@media (min-width: 1199.98px) and (max-width: 1229.98px) { 
+    section.contact-section div.tech__support input[type="text"], section.contact-section div.tech__support input[type="email"]{
+            width: 450px;
+    }
+    section.contact-section div.tech__support textarea{
+        width: 450px;
+    }
+    section.news-section div.news__item {
+    }
+    section.news-section div.news__item2 {
+    }
+	
+ }
+
+
+@media (min-width: 1229.98px) and (max-width: 1244.98px) { 
+    section.contact-section div.tech__support input[type="text"], section.contact-section div.tech__support input[type="email"]{
+        width: 450px;
+    }
+    section.contact-section div.tech__support textarea{
+        width: 450px;
+    }
+    section.news-section div.news__item {
+    }
+    section.news-section div.news__item2 {
+    }
+}
+
+@media (min-width: 1244.98px) and (max-width: 1254.98px) {
+	section.contact-section div.tech__support input[type="text"], section.contact-section div.tech__support input[type="email"]{
+        width: 450px;
+    }
+    section.contfact-section div.tech__support textarea{
+        width: 450px;
+    }
+}

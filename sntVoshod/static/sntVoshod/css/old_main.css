@@ -1,0 +1,448 @@
+/*
+font-family: 'Lobster', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+html, body{
+    font-family: 'Lobster', cursive;
+    background: #dfd532;
+    overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+header{
+    width: 100%;
+    max-width: 1200px;
+    background: orange;
+    height: 200px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0px 0px 10px 10px;
+}
+
+#voshod__header{
+    padding-left: -50px;
+    height: 200px; 
+    float: left;
+    position: relative;
+}
+
+#voshod__geo{
+    float: right;
+    font-size: 30px; 
+    padding-right: 10px;
+}
+
+#voshod__geo2{
+    float: right;;
+    font-size: 24px;
+    padding-right: 10px;
+    padding-top: 30px; 
+}
+
+#voshod__geo3{
+    float: right;
+    font-size: 24px; 
+    font-weight: normal;
+    padding-right: 10px;
+    padding-top: 40px;
+}
+
+.fatlog{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    background: #FF8C00;
+    color: black;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.a1{
+    padding-right: 5px; 
+}
+
+ol.menu{
+    list-style-type: none;
+    height: 30px;
+    padding-top: 5px;
+    background: #FFa500;
+
+} 
+
+a.a1{
+    text-decoration: none;
+}
+
+a.a1:link{
+    color: black;
+}
+a.a1:visited{
+    color: black;
+}
+ol a.a1:hover{
+    background: #ff8c00;
+}
+
+li.list1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    display: inline;
+}
+
+.navmenu{
+    max-width: 1200px;
+    width: 1200px;
+
+    margin: 0 auto;
+    text-align: center;
+    text-transform: none; 
+}
+
+.menu{
+    background: orange;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.inf-section{
+    font-family: 'Roboto', sans-serif;
+    background: orange;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 396px;
+}
+
+.inf-section__h2{
+    font-size: 20px;
+    max-width: 600px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px; 
+
+}
+
+.inf-section__div1{
+    text-align: left;
+}
+
+.list2{
+    max-width: 600px;
+}
+
+.inf-section__pole{
+    max-width: 600px;
+    max-height: 400px;
+    float: right;
+    margin-top: -277px;
+    display: block;  
+}
+
+.news-section{
+    max-width: 1200px;
+    max-height: 250px; 
+    margin: 0 auto;
+}
+
+.title{
+    font-family: 'Roboto', sans-serif;
+    max-width: 1200px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.news__item{
+    font-family: 'Roboto', sans-serif;
+    background: orange;
+    width: 370px;
+    height: 200px;
+    text-align: left;
+    border-radius: 3px;
+    margin-left: 837px;
+
+}
+
+.par-news__item{
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.sada{
+    padding-left: 5px;
+}
+
+.sd{
+    padding-left: 5px;
+}
+
+.news__item2{
+    font-family: 'Roboto', sans-serif;
+    background: orange;
+    width: 370px;
+    height: 200px;
+    text-align: left;
+    border-radius: 3px;
+    margin-left: 420px;
+    margin-top: -200px;
+}
+
+.par-news__item2{
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.sada2{
+    padding-left: 5px;
+}
+
+.sd2{
+    padding-left: 5px;
+}
+
+.news__item3{
+    font-family: 'Roboto', sans-serif;
+    background: orange;
+    width: 370px;
+    height: 200px;
+    text-align: left;
+    border-radius: 3px;
+    margin-left: 0px;
+    margin-top: -200px;
+}
+
+.par-news__item3{
+    font-size: 18px;
+    padding-left: 5px;
+}
+
+.sada3{
+    padding-left: 5px;
+}
+
+.sd3{
+    padding-left: 5px;
+}
+
+.all-news-ankor{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+a.all-news-ankor2:link{
+    color: black;
+}
+
+a.all-news-ankor2:visited{
+    color: black;
+}
+
+.div__login{
+    background: orange;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 100px;
+}
+
+.h3__login-section{
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    padding-left: 100px;
+    padding-top: 20px;
+    max-width: 425px;
+
+    
+}
+
+.login__section{
+    max-width: 500px;
+    height: 400px;
+
+} 
+
+.form__login__section{
+    max-height: 200px;
+    margin-left: 75px;
+    margin-top: 50px; 
+}   
+
+.login{
+    width: 425px;
+    padding-left: 10px;
+    padding-right: 0px;
+    border-radius: 5px; 
+}
+
+.password{
+    border-radius: 5px;
+}
+
+input[name="login"]{
+    height: 40px;
+    position: center;
+    font-size: 20px;
+}
+
+input[name="password"]{
+    height: 40px;
+    font-size: 20px;
+    width: 425px;
+    padding-left: 10px;
+    padding-right: 0px;
+    border-radius: 5px;
+}
+
+.button__submit{
+    background: #FF7F50;
+    font-size: 20px;
+    width: 210px;
+    height: 46px;
+    border-radius: 10px;
+    border: #87CEEB;
+    margin-left: 107.5px;
+}
+
+.auth-info{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    margin-left: 460px;
+    margin-top: -216px;
+    font-size: 19px;
+
+}
+
+.contacts__section{
+    background: orange;
+    max-width: 
+    width: 100%;
+}
+
+.title__contact-selection{
+    font-weight: bold;
+    font-size: 18px; 
+}
+
+.contacts{
+    font-family: 'Roboto', sans-serif;
+    background: orange;
+    padding-left: 40px;
+    margin-top: 30px;
+    max-width: 700px
+}
+
+.span__contact-selection{
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 
+}
+
+td{
+    padding: 10px;
+}
+
+table[class="table__contact-section"]{
+    padding-top: -10px;
+}
+
+.snt__contact-selection{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.link1__contact-section{
+    padding-left: 10px; 
+}
+.pre__footer-section{
+    max-width: 1200px;
+    height: 550px;
+    margin: 0 auto;
+}
+.technical-support__contact-section{
+    font-family: 'Roboto', sans-serif;
+    max-width: 330px;
+    margin-left: 800px;
+    margin-top: -400px;
+}
+
+.technical-support__title-block{
+    font-family: 'Roboto', sans-serif;
+}
+
+h3[class="technical-support__title-block"]{
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+input[class="technical-support__sent-login"]{
+    width: 316px;
+    padding-left: 10px;
+    padding-right: 0px;
+    border-radius: 5px;
+    height: 30px;
+    position: center;
+    font-size: 20px;
+}
+
+input[class="technical-support__sent-email"]{
+    width: 316px;
+    padding-left: 10px;
+    padding-right: 0px;
+    border-radius: 5px;
+    height: 30px;
+    position: center;
+    font-size: 20px;
+}
+
+.technical-support__message{
+    resize: none;
+}
+
+.submit___button-technical-support{
+    background: #FF7F50;
+    font-size: 20px;
+    width: 210px;
+    height: 46px;
+    border-radius: 10px;
+    border: #87CEEB;
+    margin-left: 65px;
+}
+
+#footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #FF7F50; /* Цвет фона */
+    color: black; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+}
+
+a[href="#contacts__1"]:link{
+    color: black;
+}
+a[href="#contacts__1"]:visited{
+    color: black;
+}
+
+.news-section__alldiv{
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
