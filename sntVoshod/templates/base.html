@@ -20,7 +20,7 @@
 <!--         <link rel="stylesheet" href="{% static 'sntVoshod/cssnormalaize/normalize.css' %}"> -->
 
         <!-- Normal css -->
-        <link rel="stylesheet" type="text/css" href="{% static 'sntVoshod/css/main.css' %}">
+       <!--  <link rel="stylesheet" type="text/css" href="{% static 'sntVoshod/css/main.css' %}"> -->
 
         <!-- google foonts -->
         <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
@@ -28,6 +28,12 @@
 
 </head>
 <body style="background:#dfd532;">
+    <style type="text/css">
+    div.news__item {
+        background: orange;
+    }
+
+</style>
     <header style="margin-bottom: 50px;">
     {% if not request.user.is_authenticated %}
                     <ul class="nav justify-content-center" style="font-size: 20px; background: orange;">
@@ -70,7 +76,7 @@
                     </ul>
                 {% endif %}
 
-            <div class="container" style="background: orange;">
+            <div class="container" style="background: orange; text-align: right;">
                 <div class="row">
                     <div class="col-6">
                         <img src="{% static 'sntVoshod/header/snt-head2.png' %}"  alt="Это официальный сайт" class="img-adaptive">
@@ -90,7 +96,7 @@
 
         {% endblock content %}
 
-        <section class="contact-section shadow-lg bg-orange rounded">
+        <section class="contact-section shadow-lg bg-orange rounded" style="background: orange; margin-top: 50px; padding-bottom:30px;">
             <div class="container">
                 <div class="row">
                     <div class=" contacts-section col-lg-7">
@@ -132,7 +138,7 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer style="background: black;">
             СНТ "Восход-1"
         </footer>
 </body>

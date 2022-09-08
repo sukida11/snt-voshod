@@ -1,7 +1,8 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-        <section class="container snt-info">
+
+        <section class="container snt-info" style="background:orange;">
             <div class="row">
                 <div class="col-lg-6 no-gutters pr-0 pl-0 snt-info__information">
                     <h2 class="inf-section__h2">На сайте СНТ"Восход-1" вы можете:</h2>
@@ -34,7 +35,7 @@
                 {% if post%}
                   {% for article in post|slice:'1'%}
                     <div class="row">
-                            </div>
+                    </div>
                             <div class="d-flex justify-content-between news__item " style="margin-top: 30px; background: #dfd532;">
                                 <div class="p-2"></div>
                                 <div class="p-3 news__item shadow-lg p-3 mb-5 bg-orange rounded" id ='123' style="margin-top: 50px; text-align:  center;">
