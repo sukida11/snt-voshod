@@ -38,6 +38,9 @@
     {% if not request.user.is_authenticated %}
                     <ul class="nav justify-content-center" style="font-size: 20px; background: orange;">
                         <li class="nav-item">
+                            <a class="nav-link active" href="{% url 'sntVoshod:index' %}">Главная</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link active" href="{% url 'sntVoshod:registration' %}">Регистрация</a>
                         </li>
                         <li class="nav-item">
@@ -96,7 +99,7 @@
 
         {% endblock content %}
 
-        <section class="contact-section shadow-lg bg-orange rounded" style="background: orange; margin-top: 50px; padding-bottom:30px;">
+        <section class="contact-section shadow-lg bg-orange rounded" style="background: orange; margin-top: 50px; padding-bottom:30px; padding-top: 20px;">
             <div class="container">
                 <div class="row">
                     <div class=" contacts-section col-lg-7">
@@ -126,13 +129,13 @@
                                 <input type="text" name="technical-support__sent-login" maxlength="40" placeholder="Введите ваше имя" required="" class="form-control technical-support__sent-login"><br><br>
                                 <input type="email" name="technical-support__sent-email" maxlength="40" placeholder="Введите ваш E-mail" required="" class="form-control technical-support__sent-email"><br><br>
                                 <textarea placeholder="Текст сообщения" name="technical-support__message" class="form-control technical-support__message" required="" rows="6" cols="38"></textarea><br><br>
-                                <span class="subm__root"><input type="checkbox" name="check__technical-support" required="">Я согласен(на) и даю право СНТ <br>"Восход-1" хранить и обрабатывать<br>
+                                <span class="subm__root"><input type="checkbox" name="check__technical-support" required=""> Я согласен(на) и даю право СНТ <br>"Восход-1" хранить и обрабатывать<br>
                                 направленные мною в электронном<br>
                                 виде персональные данные<br>
                                 с соблюдением требований<br>
                                 российского законодательства о<br>
                                 персональных данных.</span><br><br>
-                                <input type="submit" class="subm__button1" value="Отправить">
+                                <input type="submit" class="subm__button1 btn btn-success" value="Отправить">
                             </form>
                     </div>
                 </div>

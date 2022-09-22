@@ -9,12 +9,12 @@ from .models import *
 class RegUserForm(UserCreationForm):
 
 	# поля в этой форме с атрибутами
-	username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class':'form-control'}))
-	password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput(attrs={'class':'form-control'}))
-	password2 = forms.CharField(label='Повторить пароль', widget=forms.PasswordInput(attrs={'class':'form-control'}))
-	email = forms.CharField(label='Email(Ваша электронная почта)', widget=forms.EmailInput(attrs={'class':'form-control'}))
-	first_name = forms.CharField(label='Имя', widget=forms.TextInput(attrs={'class':'form-control'}))
-	last_name = forms.CharField(label='Фамилия', widget=forms.TextInput(attrs={'class':'form-control'}))
+	username = forms.CharField(label='Логин', widget=forms.TextInput(attrs={'class':'form-control', 'style': 'max-width: 500px;'}))
+	password1 = forms.CharField(label='Пароль', widget=forms.PasswordInput(attrs={'class':'form-control', 'style': 'max-width: 500px;'}))
+	password2 = forms.CharField(label='Повторить пароль', widget=forms.PasswordInput(attrs={'class':'form-control', 'style': 'max-width: 500px;'}))
+	email = forms.CharField(label='Email(Ваша электронная почта)', widget=forms.EmailInput(attrs={'class':'form-control', 'style': 'max-width: 500px;'}))
+	first_name = forms.CharField(label='Имя', widget=forms.TextInput(attrs={'class':'form-control', 'style': 'max-width: 500px;'}))
+	last_name = forms.CharField(label='Фамилия', widget=forms.TextInput(attrs={'class':'form-control', 'style': 'max-width: 500px;'}))
 
 	# переопределение аттрибутов род. класса
 	class Meta:
